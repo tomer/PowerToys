@@ -49,7 +49,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     modules();
 
     chdir_current_executable();
-    // Load Powertyos DLLS
+    // Load Powertoys DLLs
     // For now only load known DLLs
     std::unordered_set<std::wstring> known_dlls = {
       L"shortcut_guide.dll",

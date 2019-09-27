@@ -109,7 +109,7 @@ public:
     }
 
     // Return array of the names of all events that this powertoy listens for, with
-    // nullptr as the last element of the array. Nullptr can also be retured for empty list.
+    // nullptr as the last element of the array. Nullptr can also be returned for empty list.
     virtual PCWSTR* get_events() override
     {
         static PCWSTR events[] = { ll_keyboard, win_hook_event, nullptr };

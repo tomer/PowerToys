@@ -401,7 +401,7 @@ void D2DOverlayWindow::init() {
 void D2DOverlayWindow::resize() {
   window_rect = *get_window_pos(hwnd);
   float no_active_scale, font;
-  if (window_width >= window_height) { // portriat is broke right now
+  if (window_width >= window_height) { // portrait is broken right now
     use_overlay = &landscape;
     no_active_scale = 0.3f;
     font = 15.0f;
@@ -550,7 +550,7 @@ void D2DOverlayWindow::render(ID2D1DeviceContext5* d2d_dc) {
     total_monitor_with_screen.rect.right = max(total_monitor_with_screen.rect.right, thumb_window->right + monitor_dx);
     total_monitor_with_screen.rect.bottom = max(total_monitor_with_screen.rect.bottom, thumb_window->bottom + monitor_dy);
   }
-  // Only allow the new rect beeing slight bigger.
+  // Only allow the new rect being slight bigger.
   if (total_monitor_with_screen.width() - total_screen.width() > (thumb_window->right - thumb_window->left) / 2 ||
       total_monitor_with_screen.height() - total_screen.height() > (thumb_window->bottom - thumb_window->top) / 2) {
     render_monitors = false;
