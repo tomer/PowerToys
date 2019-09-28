@@ -35,7 +35,7 @@ Contains code for managing the PowerToys tray icon and its menu commands.
 Contains code for starting the PowerToys settings window and communicating with it.
 
 #### [`general_settings.cpp`](./general_settings.cpp)
-Contains code for loading, saving and applying the general setings.
+Contains code for loading, saving and applying the general settings.
 
 #### [`auto_start_helper.cpp`](./auto_start_helper.cpp)
 Contains helper code for registering and unregistering PowerToys to run when the user logs in.
